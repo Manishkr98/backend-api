@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config(); 
 const app = express()
 
-const Port = process.env.PORT
+const Port = process.env.PORT || 5000
 
 app.get("/",(req, res)=>{
     res.send("Application is under development...")
