@@ -14,6 +14,10 @@ app.get("/home",(req, res)=>{
     res.send("Welcome to My Home Page !")
 })
 
+app.get("/about",(req, res)=>{
+    res.send("Welcome to my about page")
+})
+
 app.listen(Port,()=>{
     console.log(`server is running at port ${Port}`)
 })
