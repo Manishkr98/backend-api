@@ -1,23 +1,23 @@
 import express from "express";
 import dotenv from "dotenv";
 
-dotenv.config(); 
-const app = express()
+dotenv.config();
+const app = express();
 
-const Port = process.env.PORT || 5000
+const Port = process.env.PORT || 5000;
 
-app.get("/",(req, res)=>{
-    res.send("Application is under development...")
-})
+app.get("/", (req, res) => {
+  res.send("Application is under development...");
+});
 
-app.get("/home",(req, res)=>{
-    res.send("Welcome to My Home Page !")
-})
+app.get("/home", (req, res) => {
+  res.send("Welcome to My Home Page !");
+});
 
-app.get("/about",(req, res)=>{
-    res.send("Welcome to my about page")
-})
+app.get("/about", (req, res) => {
+  res.send("Welcome to my about page");
+});
 
-app.listen(Port,()=>{
-    console.log(`server is running at port ${Port}`)
-})
+app.listen(Port, () => {
+  console.log(`server is running at port ${Port}`);
+});
